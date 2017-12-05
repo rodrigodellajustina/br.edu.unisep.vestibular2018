@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>..::Unisep::. 2018</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+	
+  </head>
+  <body>
+
+
+      <div class="row">	  
+	     <div class="container">
+		 <nav class="navbar navbar-default">
+		 <div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Vestibular 2018</a>
+		</div>
+		<ul class="nav navbar-nav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="cadastrar.html">Cadastrar Canditado</a></li>
+		<li class="active"><a href="inscrever.html">Inscrever Vestibular</a></li>
+		<li><a href="candidatos.html">Relatório Canditados</a></li>
+		</ul>
+	  </div>
+		</nav>
+          <div class="panel panel-primary">
+            <div class="panel-heading">Inscrição Vestibular</div>
+            <div class="panel-body">
+              <form id="formulario_principal" name="formulario_principal">
+                <div class="form-group">
+                  
+				   <div class="col-lg-6">
+						<div class="input-group">
+							<input type="text" class="form-control input-lg" placeholder="Buscar por nome ou CPF do candidato" name="candidato_procura" id="candidato_procura">
+							<span class="input-group-btn">
+								<button class="btn btn-secondary input-lg" name="btnpesquisar" id="btnpesquisar" type="button" onclick="f_procurar_candidato();">Buscar</button>
+							</span>
+						</div>
+					</div>
+				
+				<table class="table table-bordered table-hover" id="">
+				</table>
+				
+				
+				<div class="container">
+				<div class="row clearfix">
+                    <div class="col-md-11 column">
+                        <table class="table table-bordered table-hover" id="tab_candidatos">
+                            <thead>
+                                <tr>                                   
+                                    <th class="text-center">
+                                        CPF
+                                    </th>
+                                    <th class="text-center">
+                                        Nome Completo
+                                    </th>
+                                    <th class="text-center">
+                                        Cidade     .
+                                    </th>
+                                    <th class="text-center">
+                                        Nascimento
+                                    </th>                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id='addr0'>
+                                <tr id='addr1'>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+					
+					<table class="table table-bordered table-hover" id="">
+					</table>
+					
+					<div class="col-md-11 col-md-offset-0">
+					<div class="panel panel-primary">
+						<div class="panel-heading">Primeira Opção de Curso</div>
+							<div class="panel-body ">
+								<label class="radio-inline"><input type="radio" name="opccurso1">Sistemas de Informação</label>
+								<label class="radio-inline"><input type="radio" name="opccurso1">Administração</label>
+								<label class="radio-inline"><input type="radio" name="opccurso1">Ciências Contábeis</label>
+								<label class="radio-inline"><input type="radio" name="opccurso1">Fisioterapia</label>
+								<label class="radio-inline"><input type="radio" name="opccurso1">Odontologia</label>
+								<label class="radio-inline"><input type="radio" name="opccurso1">Engenharia Civil</label>
+								<label class="radio-inline"><input type="radio" name="opccurso1">Engenharia Elétrica</label>
+							</div>
+						</div>							
+					</div>						
+					
+
+					<div class="col-md-11 col-md-offset-0">
+					<div class="panel panel-primary">
+						<div class="panel-heading">Segunda Opção de Curso</div>
+							<div class="panel-body ">
+								<label class="radio-inline"><input type="radio" name="opccurso2">Sistemas de Informação</label>
+								<label class="radio-inline"><input type="radio" name="opccurso2">Administração</label>
+								<label class="radio-inline"><input type="radio" name="opccurso2">Ciências Contábeis</label>
+								<label class="radio-inline"><input type="radio" name="opccurso2">Fisioterapia</label>
+								<label class="radio-inline"><input type="radio" name="opccurso2">Odontologia</label>
+								<label class="radio-inline"><input type="radio" name="opccurso2">Engenharia Civil</label>
+								<label class="radio-inline"><input type="radio" name="opccurso2">Engenharia Elétrica</label>
+							</div>
+						</div>							
+					</div>		
+					<table class="table table-bordered table-hover" id="">
+					</table>
+					<div class="form-group">
+						<button type="button" id="btninscrever" onclick="f_inscrever_vestibular();" class="btn btn-lg btn-primary">
+						Inscrever
+						</button>
+					</div>						
+					</div>					
+				</div>
+				
+				</div>		
+						
+			
+							
+				
+				</div>  
+				
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/couch.js"></script>
+
+  </body>
+</html>
